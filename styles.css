@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f5f6f7;
+  background-color: #1b1b32;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  margin: 25px 0px;
+  height: 30px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  width: 325px;
+  background-color: #f5f6f7;
+  margin: 25px 0px;
+  border: 1px solid #f5f6f7;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgba(223, 220, 220, 0.75);
+}
+
+form {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: #0a0a23;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  border: 2px double;
+  /*outline: 3px solid #198eee;*/
+}
+
+#search-button {
+  width: 80px;
+  color: #f5f6f7;
+  background-color: #7f21ab;
+  padding: 14px 0px;
+  border: none;
+  border-radius: 20px;
+}
+
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 5px;
+}
+
+.show-pokemon {
+  width: 100%;
+  min-height: 325px;
+  background-color: #f0f1f7;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-name-id {
+  width: 100%;
+  height: 28px;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.size {
+  width: 100%;
+  height: 22px;
+  font-size: 0.85em;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+#types {
+  width: 100%;
+  display: flex;
+  min-height: 30px;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+table {
+  width: 100%;
+  color: #f5f6f7;
+  background-color: #7f21ab;
+  border-collapse: collapse;
+  border: none;
+}
+
+th:first-child,
+td:first-child {
+  border-right: 5px solid #f5f6f7;
+}
+td {
+  border-top: 5px solid #f5f6f7;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 8px;
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .main-container {
+    width: 450px;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  .show-pokemon {
+    width: 95%;
+  }
+
+  table {
+    width: 95%;
+  }
+}
