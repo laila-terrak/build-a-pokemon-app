@@ -55,10 +55,12 @@ label {
 input {
   width: 200px;
   height: 40px;
-  background-color: #ffffff;
   padding-left: 10px;
-  border: 2px double;
-  /*outline: 3px solid #198eee;*/
+}
+
+input:focus-visible,
+#search-button:focus-visible {
+  outline: 3px solid #198eee;
 }
 
 #search-button {
